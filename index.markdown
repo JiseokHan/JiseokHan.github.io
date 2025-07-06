@@ -17,11 +17,13 @@ layout: home
 <style>
 .profile {
   display: flex;
-  align-items: right;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 .profile-image {
-  max-width: 50px;
-  margin-right: 5px;
+  width: 200px;
+  flex-shrink: 0;
 }
 .profile-text h1 {
   margin-top: 0;
