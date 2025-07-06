@@ -21,7 +21,7 @@ layout: home
   align-items: flex-start;
   /* flex-basis로 정확히 반씩 나누기 */
   /* width:100% 대신 max-width를 써야 margin:auto가 동작합니다 */
-  max-width: 1200px;    /* 원한다면 900px 등으로 조절 */
+  max-width: 900px;    /* 원한다면 900px 등으로 조절 */
   margin: 0 auto;       /* 가로 중앙으로 이동 */
   gap: 2rem;            /* 이미지와 텍스트 사이 여백 */
   padding: 2rem 1rem;   /* 화면 양쪽 여백 여유 */
