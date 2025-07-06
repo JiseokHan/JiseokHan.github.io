@@ -19,12 +19,12 @@ layout: home
 .profile {
   display: flex;
   align-items: flex-start;
-  /* flex-basis로 정확히 반씩 나누기 */
-  /* width:100% 대신 max-width를 써야 margin:auto가 동작합니다 */
-  max-width: 900px;    /* 원한다면 900px 등으로 조절 */
-  margin: 0 auto;       /* 가로 중앙으로 이동 */
-  gap: 2rem;            /* 이미지와 텍스트 사이 여백 */
-  padding: 2rem 1rem;   /* 화면 양쪽 여백 여유 */
+  /* 부모보다 작거나 뷰포트보다 작게 고정 너비/퍼센트를 줍니다 */
+  width: 90%;          /* 부모 너비의 90% */
+  max-width: 1200px;   /* 또는 px 단위 최대값 */
+  margin: 0 auto;      /* 좌우 마진 자동—가운데 정렬 */
+  gap: 2rem;
+  padding: 2rem 1rem;
 }
 
 /* 2) 왼쪽 이미지 영역 */
