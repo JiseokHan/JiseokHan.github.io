@@ -32,7 +32,7 @@ layout: home
   flex: 0 0 50%;        /* 컨테이너 너비의 50% 고정 */
 }
 .profile-image img {
-  width: 100%;
+  width: 50%;
   height: auto;
   display: block;
   border-radius: 8px;
