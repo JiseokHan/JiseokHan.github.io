@@ -23,7 +23,7 @@ layout: home
 }
 
 .profile-image {
-  width: 10px;             /* 적절히 줄인 이미지 너비 */
+  width: 100px;             /* 적절히 줄인 이미지 너비 */
   height: auto;             /* 원본 비율 유지 */
   flex-shrink: 0;           /* 축소 방지 */
 }
