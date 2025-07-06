@@ -53,3 +53,9 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+header_pages:
+  - research.md
+  - hiking.md
+  - futsal.md
+  - cooking.md
