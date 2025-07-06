@@ -15,57 +15,64 @@ layout: home
 </div>
 
 <style>
+/* 1) 프로필 컨테이너 최대 폭 지정 + 가로 중앙 정렬 */
 .profile {
   display: flex;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
   align-items: flex-start;
+  /* flex-basis로 정확히 반씩 나누기 */
+  /* width:100% 대신 max-width를 써야 margin:auto가 동작합니다 */
+  max-width: 1200px;    /* 원한다면 900px 등으로 조절 */
+  margin: 0 auto;       /* 가로 중앙으로 이동 */
+  gap: 2rem;            /* 이미지와 텍스트 사이 여백 */
+  padding: 2rem 1rem;   /* 화면 양쪽 여백 여유 */
 }
+
+/* 2) 왼쪽 이미지 영역 */
 .profile-image {
-  flex: 0 0 50%;
+  flex: 0 0 50%;        /* 컨테이너 너비의 50% 고정 */
 }
 .profile-image img {
-  display: block;
   width: 100%;
   height: auto;
+  display: block;
   border-radius: 8px;
   object-fit: cover;
 }
+
+/* 3) 오른쪽 텍스트 영역 */
 .profile-text {
   flex: 0 0 50%;
-  padding-left: 2rem;
   box-sizing: border-box;
 }
 .profile-text h2 {
+  margin: 0 0 1rem;
   color: #298019;
   font-size: 2rem;
-  margin: 0 0 1rem;
   line-height: 1.2;
 }
 .profile-text p {
-  font-size: 1rem;
-  line-height: 1.6;
   margin: 0 0 1.5rem;
+  line-height: 1.6;
   color: #333;
 }
 .linkedin-icon {
-  display: inline-block;
   font-size: 1.5rem;
   color: #0077B5;
   text-decoration: none;
+  display: inline-block;
 }
 
-/* 모바일 전환 */
+/* 4) 모바일 대응: 768px 이하에선 세로 정렬 */
 @media (max-width: 768px) {
-  .profile { flex-direction: column; }
+  .profile {
+    flex-direction: column;
+  }
   .profile-image,
   .profile-text {
     flex: 0 0 auto;
     width: 100%;
   }
   .profile-text {
-    padding-left: 0;
     margin-top: 1.5rem;
   }
 }
