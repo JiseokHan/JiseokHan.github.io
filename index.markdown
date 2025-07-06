@@ -22,8 +22,8 @@ layout: home
   /* 부모보다 작거나 뷰포트보다 작게 고정 너비/퍼센트를 줍니다 */
   width: 50%;          /* 부모 너비의 90% */
   max-width: 1200px;   /* 또는 px 단위 최대값 */
-  margin-left: auto;
-  margin-right: 80 %;    /* 좌우 마진 자동—가운데 정렬 */
+  margin-left: 100 %;
+  margin-right: 0 %;    /* 좌우 마진 자동—가운데 정렬 */
   gap: 2rem;
   padding: 2rem 1rem;
 }
