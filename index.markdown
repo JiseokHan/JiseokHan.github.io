@@ -16,25 +16,57 @@ layout: home
 
 <style>
 .profile {
-  display: flex;        /* 가로로 나란히 */
-  width: 100%;          /* 부모 컨테이너의 전체 너비 차지 */
-  gap: 0;               /* 간격 없이 딱 반씩 */
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: flex-start;
 }
-
-.profile-image,
-.profile-text {
-  flex: 0 0 50%;        /* flex-grow:0, flex-shrink:0, flex-basis:50% */
-  box-sizing: border-box;
+.profile-image {
+  flex: 0 0 50%;
 }
-
 .profile-image img {
   display: block;
-  width: 100%;          /* 부모(50%)에 꽉 채우기 */
-  height: auto;         /* 종횡비 유지 */
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
 }
-
 .profile-text {
-  padding: 20px;        /* 필요 시 내부 여백 */
+  flex: 0 0 50%;
+  padding-left: 2rem;
+  box-sizing: border-box;
+}
+.profile-text h2 {
+  color: #298019;
+  font-size: 2rem;
+  margin: 0 0 1rem;
+  line-height: 1.2;
+}
+.profile-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0 0 1.5rem;
+  color: #333;
+}
+.linkedin-icon {
+  display: inline-block;
+  font-size: 1.5rem;
+  color: #0077B5;
+  text-decoration: none;
 }
 
+/* 모바일 전환 */
+@media (max-width: 768px) {
+  .profile { flex-direction: column; }
+  .profile-image,
+  .profile-text {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  .profile-text {
+    padding-left: 0;
+    margin-top: 1.5rem;
+  }
+}
 </style>
