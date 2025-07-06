@@ -42,7 +42,7 @@ layout: home
 
 /* 3) 오른쪽 텍스트 영역 */
 .profile-text {
-  flex: 0 0 50%;
+  flex: 0 0 100%;
   box-sizing: border-box;
 }
 .profile-text h2 {
