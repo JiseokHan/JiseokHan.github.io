@@ -55,6 +55,7 @@ plugins:
 #   - vendor/ruby/
 
 header_pages:
+  - index.markdown
   - research.md
   - hiking.md
   - futsal.md
