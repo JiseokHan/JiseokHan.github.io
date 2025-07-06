@@ -17,15 +17,18 @@ layout: home
 <style>
 .profile {
   display: flex;
-  align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;
+  align-items: center;      /* 세로 중앙 정렬 */
+  gap: 20px;                /* 이미지와 텍스트 사이 간격 */
+  flex-wrap: nowrap;        /* 줄 바꿈 방지 */
 }
+
 .profile-image {
-  width: 200px;
-  flex-shrink: 0;
+  width: 10px;             /* 적절히 줄인 이미지 너비 */
+  height: auto;             /* 원본 비율 유지 */
+  flex-shrink: 0;           /* 축소 방지 */
 }
+
 .profile-text h1 {
-  margin-top: 0;
+  margin-top: 0;            /* 불필요한 여백 제거 */
 }
 </style>
